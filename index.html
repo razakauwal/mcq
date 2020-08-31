@@ -31,10 +31,17 @@
             timeleft -= 1;
             }, 1000);
             }
-            
+            function hider(){
+                var x = document.getElementById("countdown");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            }
         
         </script>
-        <h1 id="countdown"></h1>    
+        <h1 id="countdown" style="display: block;"></h1>    
     </div>
 <form name="quiz">
     <h2>Passage 1 - Opera</h2>
@@ -187,7 +194,7 @@
     <div id="10" style="display: none">
     <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
     
-    <input type="button" value="Submit Test" onClick="getScore(this.form)">
+    <input type="button" value="Submit Test" onClick="getScore(this.form);hider();">
     <input type="reset" value="Clear"><p>
     Score = <input type=text size=15 name="percentage"><br><br>
     Correct answers:<br><div id="final" style="display: none">
