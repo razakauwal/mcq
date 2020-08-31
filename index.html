@@ -1,0 +1,207 @@
+
+<!DOCTYPE HTML>
+<meta name="VIEWPORT" content="width=device-width, initial-scale=1.0"/>
+<script type="text/javascript">var FIX=FIX||{};</script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <center>  <button class="myButton" onclick="this.style.visibility='hidden';myFunction();">Start Test</button></center>
+  <center> <div id="myDIV" class="quess" style="display: none;">
+    <div><p id="demo"></p>
+        
+        
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var timeleft = 1200;
+            var downloadTimer = setInterval(function(){
+            if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "Finished";
+            } else {
+            document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+            }
+            timeleft -= 1;
+            }, 1000);
+            }
+            
+        
+        </script>
+        <h1 id="countdown"></h1>    
+    </div>
+<form name="quiz">
+    <h2>Passage 1 - Opera</h2>
+    <p>Opera refers to a dramatic art form, originating in 
+    Europe, in which the emotional content is conveyed to 
+    the audience as much through music, both vocal and 
+    instrumental, as it is through the lyrics. By contrast, in 
+    musical theater an actor's dramatic performance is 
+    primary, and the music plays a lesser role. The drama 
+    in opera is presented using the primary elements of 
+    theater such as scenery, costumes, and acting. 
+    However, the words of the opera, or libretto, are sung 
+    rather than spoken. The singers are accompanied by 
+    a musical ensemble ranging from a small instrumental 
+    ensemble to a full symphonic orchestra.</p>
+    <br>
+    <div id="0" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>1. It is pointed out in the reading that opera ----.</b><br><br>
+    <input type="radio" name="q1" value="">A) has developed under the influence of musical theater<br>
+    <input type="radio" name="q1" value="B">B) is a drama sung with the accompaniment of an orchestra<br>
+    <input type="radio" name="q1" value="">C) is not a high-budget production<br>
+    <input type="radio" name="q1" value="">D) is often performed in Europe<br>
+    <input type="radio" name="q1" value="">E) is the most complex of all the performing arts<br><br>
+    <div id="1" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>2. We can understand from the reading that ----.</b><br><br>
+    <input type="radio" name="q2" value="">A) people are captivated more by opera than musical theater<br>
+    <input type="radio" name="q2" value="">B) drama in opera is more important than the music<br>
+    <input type="radio" name="q2" value="C">C) orchestras in operas can vary considerably in size<br>
+    <input type="radio" name="q2" value="">D) musical theater relies above all on music<br>
+    <input type="radio" name="q2" value="">E) there is argument over whether the music is important or the words in <br>        opera<br><Br>
+    <div id="2" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>3. It is stated in the reading that ----.</b><br><br>
+    <input type="radio" name="q3" value="">A) acting and costumes are secondary to music in musical theater<br>
+    <input type="radio" name="q3" value="">B) many people find musical theater more captivating than opera<br>
+    <input type="radio" name="q3" value="C">C) music in musical theater is not as important as it is in opera<br>
+    <input type="radio" name="q3" value="">D) an opera requires a huge orchestra as well as a large choir<br>
+    <input type="radio" name="q3" value="">E) opera doesn't have any properties in common with musical theater
+    
+   
+    <br><br>
+    
+    <h2>Passage 2 - Dolphins</h2>
+    <p>Dolphins are regarded as the friendliest creatures in the sea and stories of them helping drowning sailors 
+    have been common since Roman times. The more we 
+    learn about dolphins, the more we realize that their 
+    society is more complex than people previously 
+    imagined. They look after other dolphins when they 
+    are ill, care for pregnant mothers and protect the 
+    weakest in the community, as we do. Some scientists 
+    have suggested that dolphins have a language but it 
+    is much more probable that they communicate with 
+    each other without needing words. Could any of these  
+    mammals be more intelligent than man? Certainly the 
+    most common argument in favor of man's superiority 
+    over them that we can kill them more easily than they 
+    can kill us is the least satisfactory. On the contrary, 
+    the more we discover about these remarkable 
+    creatures, the less we appear superior when we 
+    destroy them.</p><br>
+    <div id="3" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>4. It is clear from the passage that dolphins ----.</b><br><br>
+    <input type="radio" name="q4" value="">A) don't want to be with us as much as we want to be with them<br>
+    <input type="radio" name="q4" value="">B) are proven to be less intelligent than once thought<br>
+    <input type="radio" name="q4" value="C">C) have a reputation for being friendly to humans<br>
+    <input type="radio" name="q4" value="">D) are the most powerful creatures that live in the oceans<br>
+    <input type="radio" name="q4" value="">E) are capable of learning a language and communicating with humans<br><br>
+    <div id="4" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>5. The fact that the writer of the passage thinks that we can kill dolphins more easily than they can kill us ----.</b><br><br>
+    <input type="radio" name="q5" value="">A) means that they are better adapted to their environment than we are<br>
+    <input type="radio" name="q5" value="">B) shows that dolphins have a very sophisticated form of communication<br>
+    <input type="radio" name="q5" value="">C) proves that dolphins are not the most intelligent species at sea<br>
+    <input type="radio" name="q5" value="D">D) does not mean that we are superior to them<br>
+    <input type="radio" name="q5" value="">E) proves that Dolphins have linguistic skills far beyond what we <br>        previously thought<br><br>
+    <div id="5" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>6. One can infer from the reading that ----.</b><br><br>
+    <input type="radio" name="q6" value="">A) dolphins are quite abundant in some areas of the world<br>
+    <input type="radio" name="q6" value="">B) communication is the most fascinating aspect of the dolphins<br>
+    <input type="radio" name="q6" value="">C) dolphins have skills that no other living creatures have such as the <br>        ability to think<br>
+    <input type="radio" name="q6" value="">D) it is not usual for dolphins to communicate with each other<br>
+    <input type="radio" name="q6" value="E">E) dolphins have some social traits that are similar to those of humans<br><br>
+    <h2>Passage 3 - Unsinkable Ship</h2>
+    <p>Naval architects never claim that a ship is unsinkable, 
+    but the sinking of the passenger-and-car ferry Estonia 
+    in the Baltic surely should have never have 
+    happened. It was well designed and carefully 
+    maintained. It carried the proper number of lifeboats. 
+    It had been thoroughly inspected the day of its fatal 
+    voyage. Yet hours later, the Estonia rolled over and 
+    sank in a cold, stormy night. It went down so quickly 
+    that most of those on board, caught in their dark, 
+    flooding cabins, had no chance to save themselves: 
+    Of those who managed to scramble overboard, only 
+    139 survived. The rest died of hypothermia before the 
+    rescuers could pluck them from the cold sea. The 
+    final death toll amounted to 912 souls. However, there 
+    were an unpleasant number of questions about why 
+    the Estonia sank and why so many survivors were 
+    men in the prime of life, while most of the dead were 
+    women, children and the elderly.</p><br>
+    <div id="6" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>7. One can understand from the reading that ----.</b><br><br>
+    <input type="radio" name="q7" value="">A) the lifesaving equipment did not work well and lifeboats could not be <br>        lowered<br>
+    <input type="radio" name="q7" value="">B) design faults and incompetent crew contributed to the sinking of the <br>        Estonia ferry<br>
+    <input type="radio" name="q7" value="">C) 139 people managed to leave the vessel but died in freezing water<br>
+    <input type="radio" name="q7" value="">D) naval architects claimed that the Estonia was unsinkable<br>
+    <input type="radio" name="q7" value="E">E) most victims were trapped inside the boat as they were in their cabins<br><br>
+    <div id="7" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>8. It is clear from the passage that the survivors of the accident ----.</b><br><br>
+    <input type="radio" name="q8" value="">A) helped one another to overcome the tragedy that had affected them <br>        all<br>
+    <input type="radio" name="q8" value="B">B) were mostly young men but women, children and the elderly stood little <br>        chance<br>
+    <input type="radio" name="q8" value="">C) helped save hundreds of lives<br>
+    <input type="radio" name="q8" value="">D) are still suffering from severe post-traumatic stress disorder<br>
+    <input type="radio" name="q8" value="">E) told the investigators nothing about the accident<br><br>
+    <div id="8" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>9. According to the passage, when the Estonia sank, ----.</b><br><br>
+    <input type="radio" name="q9" value="">A) there were only 139 passengers on board<br>
+    <input type="radio" name="q9" value="">B) few of the passengers were asleep<br>
+    <input type="radio" name="q9" value="C">C) there were enough lifeboats for the number of people on board<br>
+    <input type="radio" name="q9" value="">D) faster reaction by the crew could have increased the Estonia's <br>        chances of survival<br>
+    <input type="radio" name="q9" value="">E) all the passengers had already moved out into the open decks<br><br><br>
+    <h2>Passage 4 - Erosion in America</h2>
+    <p>Erosion of America's farmland by wind and water has 
+    been a problem since settlers first put the prairies and 
+    grasslands under the plow in the nineteenth century. 
+    By the 1930s, more than 282 million acres of 
+    farmland were damaged by erosion. After 40 years of 
+    conservation efforts, soil erosion has accelerated due 
+    to new demands placed on the land by heavy crop 
+    production. In the years ahead, soil erosion and the 
+    pollution problems it causes are likely to replace 
+    petroleum scarcity as the nation's most critical natural 
+    resource problem.</p><br>
+    <div id="9" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    <b>10. As we understand from the reading, today, soil erosion in America ----.</b><br><br>
+    <input type="radio" name="q10" value="">A) causes humans to place new demands on the land<br>
+    <input type="radio" name="q10" value="B">B) is worse than it was in the nineteenth century<br>
+    <input type="radio" name="q10" value="">C) happens so slowly that it is hardly noticed<br>
+    <input type="radio" name="q10" value="">D) is the most critical problem that the nation faces<br>
+    <input type="radio" name="q10" value="">E) is worse in areas which have a lot of petroleum production<br><Br>
+    <div id="10" style="display: none">
+    <img align="right" src="data:image/webp;base64,UklGRtoBAABXRUJQVlA4TM0BAAAvGAAGEP/AJgDAJHN3XHpQgCjU5CMBOfy2HAraSFJTx/DogJnUti3lz9/N868BDomiBWVogqLEcyw8EUgxrjX/AQAZfJq5cvdLU5Pp9VY7tdWbHVT/Ua/faItFgJtAtw7QnWSGh/T7LeLgoQMWhQVGlOp5BajZeNTo7MANBgpDRMACBNt2wkRYWksRSgYDSJzY/e/yUx1nCxH9T/Olh7F38+9j1wZpqLx387X9ytB2VvBu/nbFr47S1Gs9s/nsoq8D+/Wloq42MIr50OG28DygTZo6bIWjOe+ir+dxf+KACmrLP1woGDya6N1i8k8cKuotnK8Z3ezS6txnd/EHFD48nN18odBFJbqHmyd/f6m4G+wMT8V3aeItZgsfFbLZGfbiKVNoAm9ni8sWVaq3s52wEXJo42eezkWGbtM5L4WwtyHXaSxXQcX9dsG8rJlyqG3wbRmrNNS23paxZkKvQ0DrkPZO67hGQjb1TRm1lVoqx0wpJkrR7FzANLgOLrkyRUqUgulcuBCXyqNw4ZwGJeoGe+WSuGVG5cpUUqSEYM6SmZDJbS56h0SJkjfvnk/OJxOYEFM0n50+E41MMXnzxdM700igYL72EOmdsHbzAQA=" alt="Sorry" title="Wrong Answer"></div>
+    
+    <input type="button" value="Submit Test" onClick="getScore(this.form)">
+    <input type="reset" value="Clear"><p>
+    Score = <input type=text size=15 name="percentage"><br><br>
+    Correct answers:<br><div id="final" style="display: none">
+    <img align="right" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAtAC0DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABgcAAwUI/8QANhAAAgEDAgQDBgENAAAAAAAAAgMBBAUSAAYREyIyBxQhQUJRUmJygggVIzE0U2FxgZGiwvD/xAAZAQADAQEBAAAAAAAAAAAAAAAEBQYDBwj/xAApEQABAwIFAwQDAQAAAAAAAAABAgMRAAQFITFBURJxgQYTofBCkcHx/9oADAMBAAIRAxEAPwDsvQpuW+11udy6Okp24jBlzmkOUfCMRmB+4vTV257sykJdtopGaxscSOY9FB838/hpK+IG9907c8SNs7etKDr7ZdhiXkAg0ql0sxITKerEV/L2ljpSi+TfX6sNtlw4lPUTxmABzJnwMzlRaUJtmxcPJkHQf34804rvuFovTFodQPEhmXFJE0g/CHs+rRHb3eZpFVBDASwBLGCy4fi9ukR4+7l3TtDbFFWbTS+X1VUKGVCYH9GX615ZCXQU8cvjjo/21e6umoqOouBK5T0qOrTE/sjSWJFA/SJZdPu6W2eM+3h7GIXqgkPHpjZJkgeMszsSOa0U2h5ZYZTmnfmf9y+KYWpocvV+qaVz4oqJdUukYtL5N8gUtZjisBESyLrDuxHrHq7sSPVRQFLpLofuC61TZiC8ya4/gK+n/XVlANuqnDdrZUEUxJDDQjGYntKOrVF0UVs3PWJnhAVLPMqn4wXd/ll/eNLbxMu+7tqbipbrZLJR3uyXGeXUpKr8i2lf8wv7YEvlYJdX3a8+rsX38euLcu+06pR6VEkbzEjSRoYOeQ1qrUkKSCiSCBEbiBlH3Q03HpFqSURHgQ4kMT6TrCt6m7jVcKWx3VVF5RxIUuViQuxxzZlw6hgix6e0hkS+lbbg3tvRbKOiofDh3Pq2CCW3m+8xcFl+4WIk4fe+Xp0ydiEuz307Q2sYIm8mIUS8hfkIyRB69BczmZY9OM9Qj3aqMA9LsWF8m1xF1LpKSUpOggjncyYEZwTtQV8l1lsxIg/TIntNFFt2u2l28+hO5zVVrmBUFVmmBGHrEIWXLH2Dyg6ePs1rWSsO4W4HyiFNiSW1RTlyzCZEogvejIS6vbqy5XSgt3CKuqBbD7F8cjP7RjqnWBtK5ufuC/0polYC1VSIjGRr5gyPLZHunwULOHytHXWEpCAEjQUiJJMmta+2ilvFKK2ly2rnJThnqAv+9mg6us93pANNVbvNoIcSlA8wDj6l92mVqanMb9K2OMELeBCx+Q187GjrXEHbcdOo4O3ak/YNqottSb7JtQaOoZGMmFEKPT7pgdFCNl09dRuVuFK6kWrw5MTMiH1Zd2fwKO3RxqaFwv0XY2D4uFKU4saFR07DnvNbXeLPXAIOU67n91xN4y7X8Y/CKiu07Zul5vu3Ko+dS3dLmfnG3FlHEHGPUxeI49WQ9pDgWm1+Q/ab5bvBhl0va6x9be7q+vk6k5lhBitcFMn6zxlcz/XT/wBTVfSqv//Z" alt="Well Done" title="Well Done"></div>
+    <textarea name="solutions" wrap="virtual" rows="6" cols="27"></textarea>
+    </form>
+    <script language="JavaScript">function show(id){document.getElementById(id).style.display='block';}function hide(i){document.getElementById(i).style.display='none';}var numQues=10;var numChoi=5;var answers=new Array(10);answers[0]="B";answers[1]="C";answers[2]="C";answers[3]="C";answers[4]="D";answers[5]="E";answers[6]="E";answers[7]="B";answers[8]="C";answers[9]="B";answers[10]="D";answers[11]="C";function getScore(form){var score=0;var currElt;var currSelection;hide("final");for(i=0;i<numQues;i++){currElt=i*numChoi;for(j=0;j<numChoi;j++){currSelection=form.elements[currElt+j];if(currSelection.checked){if(currSelection.value==answers[i]){var a=i.toString();hide(a);score = score + 10;break;}else{var a=i.toString();show(a);}}else{var a=i.toString();show(a);}}}if(score==numQues)show("final");form.percentage.value=score+"%";var correctAnswers="";for(i=1;i<=numQues;i++){correctAnswers+=i+". "+answers[i-1]+"\n";}form.solutions.value=correctAnswers;}</script>
+    <div class="printing">
+    <a href="javascript:window.print()" class="tooltip"><span>
+    
+    
+    
+</div>
+</center>
+   
+</body>
+</html>
